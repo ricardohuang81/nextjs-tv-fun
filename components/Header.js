@@ -15,7 +15,8 @@ export default function Header() {
       </Link>
       <style jsx>{`
         a {
-          font-family: fantasy;
+          font-family: monospace;
+          font-size: 16px;
           color: #7B68EE;
         }
       `}</style>

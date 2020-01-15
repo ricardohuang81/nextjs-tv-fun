@@ -4,7 +4,7 @@ import fetch from 'isomorphic-unfetch'
 
 const Index = (props) => (
   <Layout>
-    <h1>Doom Patrol</h1>
+    <h1>Jessica Jones (Marvel)</h1>
     <ul>
       {props.cast.map((character, index) => (
         <li key={index + 1}>
@@ -44,7 +44,7 @@ const Index = (props) => (
 )
 
 Index.getInitialProps = async function () {
-  const res = await fetch('https://api.tvmaze.com/shows/36745/cast')
+  const res = await fetch('https://api.tvmaze.com/shows/1370/cast')
   const data = await res.json()
 
   console.log(`Show data fetched. Count: ${data.length}`)
